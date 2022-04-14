@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="open-modal">Open Modal</button>
+    <div id="modal">
+        <h2>Example Modal</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tempora, quisquam blanditiis pariatur necessitatibus cum et in ipsa impedit reiciendis rerum nemo quae voluptates quo a doloribus libero quas obcaecati magni quibusdam sit. Voluptates voluptatibus, nobis cumque earum iure architecto ipsa, unde quo rerum tenetur, fugiat magni mollitia repellendus delectus!</p>
+        <button id="close-btn">Close me</button>
+    </div>
+
+
+    <script>
+        const openModal = document.getElementById('open-modal')
+        const modal = document.getElementById('modal')
+        const closeModal = document.getElementById('close-btn')
+
+        openModal.addEventListener('click', () => {
+            modal.classList.add('active')
+        })
+
+        closeModal.addEventListener('click', () => {
+            modal.classList.remove('active')
+        })
+    </script>
+</body>
+</html>
